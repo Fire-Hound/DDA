@@ -1,5 +1,5 @@
 let x1 = 0
-let y1 = 0
+let y1 = 910
 let x2 = 1000
 let y2 = 1000
 let dx;
@@ -20,8 +20,8 @@ function draw()
   if(dx>dy) pixel=dx
   else      pixel=dy
 
-  dx = dx/pixel
-  dy = dy/pixel
+  dx = dx/pixel  //if dx>dy: xk+1 = xk + dx/dx   //if dx<dy: xk+1 = xk + dx/dy
+  dy = dy/pixel  //if dx>dy: yk+1 = yk + dy/dx   //if dx<dy: yk+1 = yk + dy/dy
 
   let endx
   if(x1<x2)
